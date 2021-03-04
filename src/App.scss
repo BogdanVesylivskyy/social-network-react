@@ -51,56 +51,6 @@
   max-width: 1200px;
   margin: 0 auto;
 
-  .header {
-    grid-area: header;
-    background-color: #dfdfdf;
-
-    img {
-      width: 85px;
-    }
-  }
-
-  .nav {
-    grid-area: nav;
-    background-color: aqua;
-  }
-
-  .contentContainer {
-    grid-area: content;
-
-    .banner {
-      img {
-        width: 100%;
-      }
-
-    }
-
-    .avatarWrapper {
-      display: grid;
-      grid-template-areas:
-      "avatar description";
-
-      //grid-template-rows: 60px 1fr;
-      grid-template-columns: 2fr 10fr;
-      grid-gap: 10px;
-
-      .avatar {
-        grid-area: avatar;
-        background-color: black;
-
-        img {
-          width: 50px;
-        }
-      }
-
-      .description {
-        grid-area: description;
-        background-color: purple;
-      }
-    }
-
-    background-color: blue;
-  }
 
 }
 
