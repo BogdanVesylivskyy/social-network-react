@@ -44,13 +44,19 @@
   "header header"
   "nav content";
 
-  grid-template-rows: 60px 1fr;
+  grid-template-rows: 71px 1fr;
   grid-template-columns: 2fr 10fr;
-  grid-gap: 10px;
+  //grid-gap: 10px;
 
-  max-width: 1200px;
-  margin: 0 auto;
+  //max-width: 1200px;
+  //margin: 0 auto;
 
+  min-height: 100vh;
+
+  .app-wrapper-content {
+    grid-area: content;
+    background-color: #f9f8ff;
+  }
 
 }
 

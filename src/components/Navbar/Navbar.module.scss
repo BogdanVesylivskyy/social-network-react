@@ -1,0 +1,28 @@
+.nav {
+  grid-area: nav;
+  align-items: flex-start;
+  background: linear-gradient( 115.44deg, #5b4a75 -9.42%, #423359 103.23%);
+  color: #fff;
+  display: flex;
+  font-family: Montserrat,sans-serif;
+  //font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  //padding: 25px 10px;
+
+  ul {
+    padding: 0 0 0 20px;
+    li {
+      list-style: none;
+
+      a {
+        color: #fff;
+        cursor: pointer;
+        display: block;
+        font-size: 14px;
+        padding: 5px 0;
+        text-decoration: none;
+      }
+    }
+  }
+}
