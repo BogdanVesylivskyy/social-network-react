@@ -1,36 +1,3 @@
 .profileWrapper {
 
-  .banner {
-    img {
-      width: 100%;
-      display: block;
-    }
-
-  }
-
-  .avatarWrapper {
-    background-color: blue;
-    display: grid;
-    grid-template-areas:
-      "avatar description";
-
-    //grid-template-rows: 60px 1fr;
-    grid-template-columns: 2fr 10fr;
-    //grid-gap: 10px;
-
-    .avatar {
-      grid-area: avatar;
-      background-color: black;
-
-      img {
-        width: 50px;
-      }
-    }
-
-    .description {
-      grid-area: description;
-      background-color: purple;
-    }
-  }
-
 }

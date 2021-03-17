@@ -1,25 +1,34 @@
-// import React from 'react'
+import React from 'react'
 
 import './MyPosts.scss'
 import Post from "./Post/Post";
 
 
 
-function MyPosts() {
+
+function MyPosts(props) {
+
+    let postElements = props.items.map(el => <Post id={el.id} message={el.message} likeCount={el.likeCount}/>)
+
     return (
         <div className="postWrapper">
             <div>
-                my post
+                <h3>my post</h3>
             </div>
 
-            <div>
-                {/*<textarea>textarea</textarea>*/}
-                <button>Add post</button>
+            <div className='messages'>
+                <div>
+                    <textarea rows="10" name="description" defaultValue="This is a description." />
+                </div>
+                <div>
+                    <button>Add post</button>
+                </div>
             </div>
 
             <div className="posts">
-                <Post massage="Hi, how are you " like="1" />
-                <Post massage="It's my first post "  like="5" />
+                {postElements}
+                {/*<Post massage={postData[0].message} like={postData[0].likeCount}/>*/}
+                {/*<Post massage={postData[1].message} like={postData[1].likeCount}/>*/}
             </div>
         </div>
     );
